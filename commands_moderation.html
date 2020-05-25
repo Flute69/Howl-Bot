@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from servant.tanc.red/commands_moderation by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 24 May 2020 08:15:29 GMT -->
+<head>
+<title>Servant</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Primary Meta Tags -->
+<title>Meta Tags — Preview, Edit and Generate</title>
+<meta name="title" content="Servant — Commands">
+<meta name="description" content="Plenty of commands: Moderation, Information, Utilities, Fun and Economy!">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="commands_moderation.html">
+<meta property="og:title" content="Servant — Commands">
+<meta property="og:description" content="Plenty of commands: Moderation, Information, Utilities, Fun and Economy!">
+<meta property="og:image" content="../i.imgur.com/FR7VeaT.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="commands_moderation.html">
+<meta property="twitter:title" content="Servant — Commands">
+<meta property="twitter:description" content="Plenty of commands: Moderation, Information, Utilities, Fun and Economy!">
+<meta property="twitter:image" content="../i.imgur.com/FR7VeaT.png">
+
+<!-- Icon / Stylesheets -->
+<link rel="shortcut icon" type="image/x-icon" href="images/servant_ava.png" />
+<link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+<link rel="stylesheet" href="../use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prompt">
+<link rel="stylesheet" href="css/stylesa4f0.css?v=0">
+
+<!-- Scrips -->
+<script src="../code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="js/materialize.js"></script>
+<script src="js/app.js"></script>
+<!-- <script src="js/snow.js"></script> -->
+</head>
+<body>
+<canvas id="sky"></canvas>
+<nav class="nav-wrapper">
+  <div class="logo-a-wrapper">
+    <a href="index.html">
+      <div class="logo-wrapper">
+          <div class="logo-left">
+            <img src="images/servant_ava.png">
+            <div class="online-bg"></div>
+            <div class="online"></div>
+          </div>
+          <div class="logo-right">
+            <div class="logo-right-top">
+              <div class="logo-text">
+                <h1>Howl</h1>
+              </div>
+              <div class="logo-verified">
+                <span>✓ BOT</span>
+                <span class="tooltiptext">Verified Bot</span>
+              </div>
+            </div>
+            <div class="logo-right-bottom">
+              <div class="status-emote">
+                <img src="images/servantLove.png">
+              </div>
+              <div class="status-text">
+                <h2>#StayAtHome</h2>
+              </div>
+            </div>
+          </div>
+      </div>
+    </a>
+
+    <div class="burger-icon"><i class="fas fa-bars"></i> MENU</div>
+  </div>
+  <ul class="nav-items main-nav mobile-hide">
+    <li class="list-item"><a href="index.html">Home</a></li>
+    <li class="list-item"><font color="#7289da">Commands</font></li>
+    <li class="list-item"><a href="faq.html">FAQ</a></li>
+  </ul>
+</nav>
+<div class="main-wrapper">
+  <div class="commands-wrapper">
+    <div class="commands-featured">
+      <div id="meta"></div>
+      <h1>Commands</h1>
+    </div>
+    <div class="main-content">
+      <ul class="collapsible">
+        <li>
+          <div class="collapsible-body">
+            <table class="table">
+              <tr>
+                <td class="td-l"><h3><i class="fas fa-info-circle"></i> Description</h3></td>
+                <td class="td-r"><h3><i class="fas fa-signature"></i> Alias</h3></td>
+              </tr>
+              <tr>
+                <td class="td-l"><p>
+                  This role will be automatically given to any new member.<br/>
+                  You can set a delay in minutes.
+                </p></td>
+                <td class="td-r"><p>
+                  None
+                </p></td>
+              </tr>
+            </table>
+            <h3><i class="fas fa-check-circle"></i> Permissions</h3>
+            <table class="table">
+              <tr>
+                <td class="td-l"><span class="titleme">User</span></td>
+                <td class="td-r"><span class="titleme">Servant</span></td>
+              </tr>
+              <tr>
+                <td class="td-l"><span class="highlightme">Manage Roles</span></td>
+                <td class="td-r">
+                  <span class="highlightme">Read Text Channels & See Voice Channels</span>, <span class="highlightme">Send Messages</span>, <span class="highlightme">Read Message History</span>,
+                  <span class="highlightme">Embed Links</span>, <span class="highlightme">Manage Roles</span>
+                </td>
+              </tr>
+            </table>
+            <p></p> <!-- For margin-bottom at .collapsible p -->
+            <h3><i class="fas fa-exclamation-circle"></i> Usage</h3>
+            <p>
+              <span class="titleme">Setting up an autorole</span><br/>
+              Command: <span class="highlightme">!autorole set [@role] [optinal delay]</span><br/>
+              Example 1: <span class="highlightme">!autorole set @Member</span><br/>
+              Example 2: <span class="highlightme">!autorole set @Member 10</span>   <i class="fas fa-sticky-note"></i> Role after 10 minutes.
+            </p>
+            <p>
+              <span class="titleme">Unsetting the autorole</span><br/>
+              Command: <span class="highlightme">!autorole unset</span>
+            </p>
+            <p>
+              <span class="titleme">Showing current autorole</span><br/>
+              Command: <span class="highlightme">!autorole show</span>
+            </p>
+            <h3><i class="fas fa-comment-dots"></i> Hint</h3>
+            <p>
+              Pinging the role on setup, will also ping anyone with this role.<br/>
+              Execute the command in a hidden channel to prevent pinging many people.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="fas fa-user-cog"></i> ban - bans a user from the current server.
+</div>
+          <div class="collapsible-body">
+            <table class="table">
+              <tr>
+                <td class="td-l"><h3><i class="fas fa-info-circle"></i> Description</h3></td>
+                <td class="td-r"><h3><i class="fas fa-signature"></i> Alias</h3></td>
+              </tr>
+              <tr>
+                <td class="td-l"><p>
+                  Users can vote images that will be posted in a best of channel.<br/>
+                  You can set up the vote-emote/emoji, the best of channel and the amount of people that have to vote (fix number and/or percentage of online users).
+                </p></td>
+                <td class="td-r"><p>
+                  image
+                </p></td>
+              </tr>
+            </table>
+            <h3><i class="fas fa-check-circle"></i> Permissions</h3>
+            <table class="table">
+              <tr>
+                <td class="td-l"><span class="titleme">User</span></td>
+                <td class="td-r"><span class="titleme">Servant</span></td>
+              </tr>
+              <tr>
+                <td class="td-l"><span class="highlightme">Manage Channels</span></td>
+                <td class="td-r">
+                  <span class="highlightme">Read Text Channels & See Voice Channels</span>, <span class="highlightme">Send Messages</span>, <span class="highlightme">Read Message History</span>, 
+                  <span class="highlightme">Embed Links</span>, <span class="highlightme">Add Reactions</span>
+                </td>
+              </tr>
+            </table>
+            <p></p> <!-- For margin-bottom at .collapsible p -->
+            <h3><i class="fas fa-exclamation-circle"></i> Usage</h3>
+            <p>
+              <span class="titleme">Set up vote-emote/emoji</span><br/>
+              Command: <span class="highlightme">!bestofimage [emoji or emote]</span><br/>
+              Example (Emoji): <span class="highlightme">!bestofimage ⭐</span><br/>
+              Example (Emote): <span class="highlightme">!bestofimage <img src="images/love_emote.png" class="emote"></span>
+            </p>
+            <p>
+              <span class="titleme">Set up a number of people that have to vote</span><br/>
+              Command: <span class="highlightme">!bestofimage [number]</span><br/>
+              Example: <span class="highlightme">!bestofimage 10</span>
+            </p>
+            <p>
+              <span class="titleme">Set up a percentage of online members that have to vote</span><br/>
+              Command: <span class="highlightme">!bestofimage [percentage]%</span><br/>
+              Example: <span class="highlightme">!bestofimage 50%</span>
+            </p>
+            <p>
+              <span class="titleme">Show current set up</span><br/>
+              Command: <span class="highlightme">!bestofimage show</span>
+            </p>
+            <h3><i class="fas fa-comment-dots"></i> Hint</h3>
+            <p>
+              Setting up both number and percentage has a big advantage:
+              <ul>
+                  <li>As your sever is growing it is nice to have a percentage based amount of online members that have to vote.</li>
+                  <li>But at night, there may be just a few members who could abuse this, so you can set up a minimum number of votes.</li>
+              </ul>
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-body">
+            <table class="table">
+              <tr>
+                <td class="td-l"><h3><i class="fas fa-info-circle"></i> Description</h3></td>
+                <td class="td-r"><h3><i class="fas fa-signature"></i> Alias</h3></td>
+              </tr>
+              <tr>
+                <td class="td-l"><p>
+                    Users can vote messages that will be posted in a best of channel.<br/>
+                    You can set up the vote-emote/emoji, the best of channel and the amount of people that have to vote (fix number and/or percentage of online users).
+                  </p></td>
+                <td class="td-r"><p>
+                  quote
+                </p></td>
+              </tr>
+            </table>
+            <h3><i class="fas fa-check-circle"></i> Permissions</h3>
+            <table class="table">
+              <tr>
+                <td class="td-l"><span class="titleme">User</span></td>
+                <td class="td-r"><span class="titleme">Servant</span></td>
+              </tr>
+              <tr>
+                <td class="td-l"><span class="highlightme">Manage Channels</span></td>
+                <td class="td-r">
+                  <span class="highlightme">Read Text Channels & See Voice Channels</span>, <span class="highlightme">Send Messages</span>, <span class="highlightme">Read Message History</span>, 
+                  <span class="highlightme">Embed Links</span>, <span class="highlightme">Add Reactions</span>
+                </td>
+              </tr>
+            </table>
+            <p></p> <!-- For margin-bottom at .collapsible p -->
+            <h3><i class="fas fa-exclamation-circle"></i> Usage</h3>
+            <p>
+              <span class="titleme">Set up vote-emote/emoji</span><br/>
+              Command: <span class="highlightme">!bestofquote [emoji or emote]</span><br/>
+              Example (Emoji): <span class="highlightme">!bestofquote ⭐</span><br/>
+              Example (Emote): <span class="highlightme">!bestofquote <img src="images/love_emote.png" class="emote"></span>
+            </p>
+            <p>
+              <span class="titleme">Set up a number of people that have to vote</span><br/>
+              Command: <span class="highlightme">!bestofquote [number]</span><br/>
+              Example: <span class="highlightme">!bestofquote 10</span>
+            </p>
+            <p>
+              <span class="titleme">Set up a percentage of online members that have to vote</span><br/>
+              Command: <span class="highlightme">!bestofquote [percentage]%</span><br/>
+              Example: <span class="highlightme">!bestofquote 50%</span>
+            </p>
+            <p>
+              <span class="titleme">Show current set up</span><br/>
+              Command: <span class="highlightme">!bestofquote show</span>
+            </p>
+            <h3><i class="fas fa-comment-dots"></i> Hint</h3>
+            <p>
+              Setting up both number and percentage has a big advantage:
+              <ul>
+                  <li>As your sever is growing it is nice to have a percentage based amount of online members that have to vote.</li>
+                  <li>But at night, there may be just a few members who could abuse this, so you can set up a minimum number of votes.</li>
+              </ul>
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="fas fa-user-cog"></i> kick - kicks a user from the current server.</div>
+          <div class="collapsible-body">
+            <table class="table">
+              <tr>
+                <td class="td-l"><h3><i class="fas fa-info-circle"></i> Description</h3></td>
+                <td class="td-r"><h3><i class="fas fa-signature"></i> Alias</h3></td>
+              </tr>
+              <tr>
+                <td class="td-l"><p>
+                    Manage the birthdays on this server:
+                    <ul>
+                      <li>Members can add their birthday to the list.</li>
+                      <li>Members can remove their birthday from the list.</li>
+                      <li>Members can create a one-time list of all birthdays of this server.</li>
+                      <li>Moderators can set up a notification channel, where Servant will post a Happy-Birthday-Message.</li>
+                      <li>Moderators can create a list of all birthdays of this server, which will be updated regulary.</li>
+                    </ul>
+                  </p></td>
+                <td class="td-r"><p>
+                  bday
+                </p></td>
+              </tr>
+            </table>
+            <h3><i class="fas fa-check-circle"></i> Permissions</h3>
+            <table class="table">
+              <tr>
+                <td class="td-l"><span class="titleme">User</span></td>
+                <td class="td-r"><span class="titleme">Servant</span></td>
+              </tr>
+              <tr>
+                <td class="td-l">None</td>
+                <td class="td-r">
+                  <span class="highlightme">Read Text Channels & See Voice Channels</span>, <span class="highlightme">Send Messages</span>, <span class="highlightme">Read Message History</span>, 
+                  <span class="highlightme">Embed Links</span>
+                </td>
+              </tr>
+            </table>
+            <p></p> <!-- For margin-bottom at .collapsible p -->
+            <h3><i class="fas fa-exclamation-circle"></i> Usage</h3>
+            <p>
+              <span class="titleme">Set notification channel</span><br/>
+              Command: <span class="highlightme">!birthday #channel</span>
+            </p>
+            <p>
+              <span class="titleme">Unset notification channel</span><br/>
+              Command: <span class="highlightme">!birthday unsetchannel</span>
+            </p>
+            <p>
+              <span class="titleme">Create an auto updating birthday list</span><br/>
+              Command: <span class="highlightme">!birthday updatelist</span>
+            </p>
+            <p>
+              <span class="titleme">Set birthday</span><br/>
+              Command: <span class="highlightme">!birthday yyyy-MM-dd</span><br/>
+              Example: <span class="highlightme">!birthday 1990-12-31</span>
+            </p>
+            <p>
+              <span class="titleme">Unset birthday</span><br/>
+              Command: <span class="highlightme">!birthday unsetbirthday</span>
+            </p>
+            <p>
+              <span class="titleme">Create a non-updating birthday list</span><br/>
+              Command: <span class="highlightme">!birthday list</span>
+            </p>
+            <p>
+              <span class="titleme">Add/Remove Servant's birthday</span><br/>
+              Command: <span class="highlightme">!birthday servant</span>
+            </p>
+            <h3><i class="fas fa-comment-dots"></i> Hint</h3>
+            <p>
+              The commands have different required permissions.<br/>
+              See description:
+              <ul>
+                <li>"Members": No permission required</li>
+                <li>"Moderators": <span class="highlightme">Manage Channels</span></li>
+              </ul>
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="fas fa-user-cog"></i> prune - removes messages from the current server.
+</div>
+          <div class="collapsible-body">
+            <table class="table">
+              <tr>
+                <td class="td-l"><h3><i class="fas fa-info-circle"></i> Description</h3></td>
+                <td class="td-r"><h3><i class="fas fa-signature"></i> Alias</h3></td>
+              </tr>
+              <tr>
+                <td class="td-l"><p>
+                  Deletes up to 100 messages.<br/>
+                  Can delete user specific messages from the past 100 messages.<br/>
+                  Messages older than two weeks cannot be deleted because of Discord's restrictions.
+                </p></td>
+                <td class="td-r"><p>
+                  clean<br/>
+                  remove<br/>
+                  delete<br/>
+                  purge
+                </p></td>
+              </tr>
+            </table>
+            <h3><i class="fas fa-check-circle"></i> Permissions</h3>
+            <table class="table">
+              <tr>
+                <td class="td-l"><span class="titleme">User</span></td>
+                <td class="td-r"><span class="titleme">Servant</span></td>
+              </tr>
+              <tr>
+                <td class="td-l"><span class="highlightme">Manage Messages</span></td>
+                <td class="td-r">
+                  <span class="highlightme">Read Text Channels & See Voice Channels</span>, <span class="highlightme">Send Messages</span>, <span class="highlightme">Read Message History</span>, 
+                  <span class="highlightme">Embed Links</span>, <span class="highlightme">Manage Messages</span>
+                </td>
+              </tr>
+            </table>
+            <p></p> <!-- For margin-bottom at .collapsible p -->
+            <h3><i class="fas fa-exclamation-circle"></i> Usage</h3>
+            <p>
+              <span class="titleme">Delete some messages</span><br/>
+              Command: <span class="highlightme">!server [1 - 100 OR @user]</span><br/>
+              Example 1: <span class="highlightme">!server 50</span><br/>
+              Example 2: <span class="highlightme">!server @name</span>
+            </p>
+            <h3><i class="fas fa-comment-dots"></i> Hint</h3>
+            <p>
+              The range is inclusively, so you can also delete just 1 or a total of 100 messages.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-body">
+            <table class="table">
+              <tr>
+                <td class="td-l"><h3><i class="fas fa-info-circle"></i> Description</h3></td>
+                <td class="td-r"><h3><i class="fas fa-signature"></i> Alias</h3></td>
+              </tr>
+              <tr>
+                <td class="td-l"><p>
+                  The bot will post a notification once a user joins the server.
+                </p></td>
+                <td class="td-r"><p>
+                  None
+                </p></td>
+              </tr>
+            </table>
+            <h3><i class="fas fa-check-circle"></i> Permissions</h3>
+            <table class="table">
+              <tr>
+                <td class="td-l"><span class="titleme">User</span></td>
+                <td class="td-r"><span class="titleme">Servant</span></td>
+              </tr>
+              <tr>
+                <td class="td-l"><span class="highlightme">Manage Channels</span></td>
+                <td class="td-r">
+                  <span class="highlightme">Read Text Channels & See Voice Channels</span>, <span class="highlightme">Send Messages</span>, <span class="highlightme">Read Message History</span>, 
+                  <span class="highlightme">Embed Links</span>
+                </td>
+              </tr>
+            </table>
+            <p></p> <!-- For margin-bottom at .collapsible p -->
+            <h3><i class="fas fa-exclamation-circle"></i> Usage</h3>
+            <p>
+              <span class="titleme">Setting up a join notification channel</span><br/>
+              Command: <span class="highlightme">!join set [#channel]</span><br/>
+              Example: <span class="highlightme">!join set #welcome</span>
+            </p>
+            <p>
+              <span class="titleme">Unsetting this channel</span><br/>
+              Command: <span class="highlightme">!join unset</span>
+            </p>
+            <p>
+              <span class="titleme">Showing current notification channel</span><br/>
+              Command: <span class="highlightme">!join show</span>
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="fas fa-user-cog"></i> mute - mutes a user from the current server.</div>
+          <div class="collapsible-body">
+            <table class="table">
+              <tr>
+                <td class="td-l"><h3><i class="fas fa-info-circle"></i> Description</h3></td>
+                <td class="td-r"><h3><i class="fas fa-signature"></i> Alias</h3></td>
+              </tr>
+              <tr>
+                <td class="td-l"><p>
+                  Change the description of the join message.
+                </p></td>
+                <td class="td-r"><p>
+                  joinmsg
+                </p></td>
+              </tr>
+            </table>
+            <h3><i class="fas fa-check-circle"></i> Permissions</h3>
+            <table class="table">
+              <tr>
+                <td class="td-l"><span class="titleme">User</span></td>
+                <td class="td-r"><span class="titleme">Servant</span></td>
+              </tr>
+              <tr>
+                <td class="td-l"><span class="highlightme">Manage Channels</span></td>
+                <td class="td-r">
+                  <span class="highlightme">Read Text Channels & See Voice Channels</span>, <span class="highlightme">Send Messages</span>, <span class="highlightme">Read Message History</span>, 
+                  <span class="highlightme">Embed Links</span>
+                </td>
+              </tr>
+            </table>
+            <p></p> <!-- For margin-bottom at .collapsible p -->
+            <h3><i class="fas fa-exclamation-circle"></i> Usage</h3>
+            <p>
+              <span class="titleme">Set the message</span><br/>
+              Command: <span class="highlightme">!joinmessage [your text]</span><br/>
+              Example: <span class="highlightme">!joinmessage Everyone say hello!</span>
+            </p>
+            <p>
+              <span class="titleme">Unsetting this message</span><br/>
+              Command: <span class="highlightme">!joinmessage</span>
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-body">
+            <table class="table">
+              <tr>
+                <td class="td-l"><h3><i class="fas fa-info-circle"></i> Description</h3></td>
+                <td class="td-r"><h3><i class="fas fa-signature"></i> Alias</h3></td>
+              </tr>
+              <tr>
+                <td class="td-l"><p>
+                  The bot will post a notification once a user leaves the server.
+                </p></td>
+                <td class="td-r"><p>
+                  None
+                </p></td>
+              </tr>
+            </table>
+            <h3><i class="fas fa-check-circle"></i> Permissions</h3>
+            <table class="table">
+              <tr>
+                <td class="td-l"><span class="titleme">User</span></td>
+                <td class="td-r"><span class="titleme">Servant</span></td>
+              </tr>
+              <tr>
+                <td class="td-l"><span class="highlightme">Manage Channels</span></td>
+                <td class="td-r">
+                  <span class="highlightme">Read Text Channels & See Voice Channels</span>, <span class="highlightme">Send Messages</span>, <span class="highlightme">Read Message History</span>, 
+                  <span class="highlightme">Embed Links</span>
+                </td>
+              </tr>
+            </table>
+            <p></p> <!-- For margin-bottom at .collapsible p -->
+            <h3><i class="fas fa-exclamation-circle"></i> Usage</h3>
+            <p>
+              <span class="titleme">Setting up a leave notification channel</span><br/>
+              Command: <span class="highlightme">!leave set [#channel]</span><br/>
+              Example: <span class="highlightme">!leave set #welcome</span>
+            </p>
+            <p>
+              <span class="titleme">Unsetting this channel</span><br/>
+              Command: <span class="highlightme">!leave unset</span>
+            </p>
+            <p>
+              <span class="titleme">Showing current notification channel</span><br/>
+              Command: <span class="highlightme">!leave show</span>
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="fas fa-user-cog"></i> unban - unbans a user from the current server.</div>
+          <div class="collapsible-body">
+            <table class="table">
+              <tr>
+                <td class="td-l"><h3><i class="fas fa-info-circle"></i> Description</h3></td>
+                <td class="td-r"><h3><i class="fas fa-signature"></i> Alias</h3></td>
+              </tr>
+              <tr>
+                <td class="td-l"><p>
+                  Change the description of the leave message.
+                </p></td>
+                <td class="td-r"><p>
+                  leavemsg
+                </p></td>
+              </tr>
+            </table>
+            <h3><i class="fas fa-check-circle"></i> Permissions</h3>
+            <table class="table">
+              <tr>
+                <td class="td-l"><span class="titleme">User</span></td>
+                <td class="td-r"><span class="titleme">Servant</span></td>
+              </tr>
+              <tr>
+                <td class="td-l"><span class="highlightme">Manage Channels</span></td>
+                <td class="td-r">
+                  <span class="highlightme">Read Text Channels & See Voice Channels</span>, <span class="highlightme">Send Messages</span>, <span class="highlightme">Read Message History</span>, 
+                  <span class="highlightme">Embed Links</span>
+                </td>
+              </tr>
+            </table>
+            <p></p> <!-- For margin-bottom at .collapsible p -->
+            <h3><i class="fas fa-exclamation-circle"></i> Usage</h3>
+            <p>
+              <span class="titleme">Set the message</span><br/>
+              Command: <span class="highlightme">!leavemessage [your text]</span><br/>
+              Example: <span class="highlightme">!leavemessage Aw man!</span>
+            </p>
+            <p>
+              <span class="titleme">Unsetting this message</span><br/>
+              Command: <span class="highlightme">!leavemessage</span>
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="fas fa-user-cog"></i> unmute - unmutes a user from the current server.</div>
+          <div class="collapsible-body">
+            <table class="table">
+              <tr>
+                <td class="td-l"><h3><i class="fas fa-info-circle"></i> Description</h3></td>
+                <td class="td-r"><h3><i class="fas fa-signature"></i> Alias</h3></td>
+              </tr>
+              <tr>
+                <td class="td-l"><p>
+                  Set up roles that are assigned if a member hits a certain level.
+                </p></td>
+                <td class="td-r"><p>
+                  rankrole
+                </p></td>
+              </tr>
+            </table>
+            <h3><i class="fas fa-check-circle"></i> Permissions</h3>
+            <table class="table">
+              <tr>
+                <td class="td-l"><span class="titleme">User</span></td>
+                <td class="td-r"><span class="titleme">Servant</span></td>
+              </tr>
+              <tr>
+                <td class="td-l"><span class="highlightme">Manage Roles</span></td>
+                <td class="td-r">
+                  <span class="highlightme">Read Text Channels & See Voice Channels</span>, <span class="highlightme">Send Messages</span>, <span class="highlightme">Read Message History</span>,
+                  <span class="highlightme">Embed Links</span>, <span class="highlightme">Manage Roles</span>
+                </td>
+              </tr>
+            </table>
+            <p></p> <!-- For margin-bottom at .collapsible p -->
+            <h3><i class="fas fa-exclamation-circle"></i> Usage</h3>
+            <p>
+              <span class="titleme">Set up a role</span><br/>
+              Command: <span class="highlightme">!levelrole set [level] @role</span><br/>
+              Example: <span class="highlightme">!levelrole set 10 @SuperMember</span>
+            </p>
+            <p>
+              <span class="titleme">Unset a role</span><br/>
+              Command: <span class="highlightme">!levelrole unset [level] @role</span><br/>
+              Example: <span class="highlightme">!levelrole unset 10 @SuperMember</span>
+            </p>
+            <p>
+              <span class="titleme">Show current levelroles</span><br/>
+              Command: <span class="highlightme">!levelrole show</span>
+            </p>
+            <p>
+              <span class="titleme">Refresh</span><br/>
+              Command: <span class="highlightme">!levelrole refresh</span>
+            </p>
+            <h3><i class="fas fa-comment-dots"></i> Hint</h3>
+            <p>
+              You can set up multiple roles for one level.<br/>
+              With refresh, you can reassign the roles to the members in case they somehow didn't get it. This does not remove any roles.
+            </p>
+          </div>
+        </li>
+
+      </ul>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          var elems = document.querySelectorAll('.collapsible');
+          var instances = M.Collapsible.init(elems, options);
+        });
+
+        $(document).ready(function(){
+          $('.collapsible').collapsible();
+        });
+      </script>
+    </div>
+    <div class="main-sidebar">
+      <div class="commands-burger-icon"><i class="fas fa-bars"></i> COMMAND CATEGORIES</div>
+      <ul class="commands-nav-items commands-nav mobile-hide">
+        <li class="commands-list-item"><a href="commands_moderation.html" class="commands-button-active"><i class="fas fa-user-cog"></i> Moderation</a></li>
+        <li class="commands-list-item"><a href="commands_information.html" class="commands-button"><i class="fas fa-info-circle"></i> Information</a></li>
+        <li class="commands-list-item"><a href="commands_Utilities.html" class="commands-button"><i class="far fa-lightbulb"></i> Utilities</a></li>
+        <li class="commands-list-item"><a href="commands_fun.html" class="commands-button"><i class="fas fa-volleyball-ball"></i> Fun</a></li>
+        <li class="commands-list-item"><a href="commands_Economy.html" class="commands-button"><i class="far fa-comments"></i> Economy</a></li>
+        <li class="commands-list-item"><a href="commands_random.html" class="commands-button"><i class="fas fa-dice"></i> Random</a></li>
+        <li class="commands-list-item"><a href="commands_memes.html" class="commands-button"><i class="fas fa-memes"></i> Memes</a></li>
+        <li class="commands-list-item"><a href="commands_music.html" class="commands-button"><i class="fas fa-memes"></i> Music</a></li>
+
+      </ul>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="foot1">
+    <h3>Contact</h3>
+    <p><i class="fab fa-discord"></i> Discord Name: Jawad#7298</p>
+    <p><i class="fas fa-at"></i><a>Email: jawad@howlbot.com</a></p>
+  </div>
+  <div class="foot2">
+    <h3>Reference</h3>
+    <p><a href="https://discord.com/oauth2/authorize?client_id=713779401258565703&scope=bot" target="_blank"><img src="images/servant_ava.png">  Invite Howl</a></p>
+    <p><a href="https://discord.gg/65C5Sbn" target="_blank"><i class="fab fa-discord"></i> Heaven's Gate</a></p>
+    <p><a href="" target="_blank"><i class="fas fa-robot"></i> Discord Bot List</a></p>
+  </div>
+  <div class="foot3">
+    <h3>Social Media</h3>
+    <p><a href="https://twitter.com/jumpsuitclub" target="_blank"><i class="fab fa-twitter"></i> Twitter: Jumpsuitclub</a></p>
+    <p><a href="https://instagram.com/songsofseperation1999" target="_blank"><i class="fab fa-twitter"></i> Instagram: SongsOfSeperation1999</a></p>
+    <p><a href="https://github.com/jawad-dev/" target="_blank"><i class="fab fa-github"></i> GitHub: Jawad-dev</a></p>
+    </ul>
+  </div>
+  <div class="copyright">&copy; Jawad 2020</div>
+</footer>
+<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+
+</html>
