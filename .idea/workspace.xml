@@ -20,8 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9cde776-5d53-4b10-8609-389dcb45dac2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/commands_covid.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commands_image.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands_covid.html" beforeDir="false" afterPath="$PROJECT_DIR$/commands_covid.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/commands_economy.html" beforeDir="false" afterPath="$PROJECT_DIR$/commands_economy.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/commands_fun.html" beforeDir="false" afterPath="$PROJECT_DIR$/commands_fun.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/commands_information.html" beforeDir="false" afterPath="$PROJECT_DIR$/commands_information.html" afterDir="false" />
@@ -89,12 +90,13 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="645" y="253" width="628" height="592" key="find.popup" timestamp="1590452356476">
+    <state x="645" y="253" width="628" height="592" key="find.popup" timestamp="1590482197414">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="645" y="253" width="628" height="592" key="find.popup/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1590452356476" />
+    <state x="645" y="253" width="628" height="592" key="find.popup/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1590482197414" />
     <state x="645" y="253" width="585" height="592" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1590340531565" />
   </component>
 </project>
