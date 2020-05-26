@@ -1,12 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="f9cde776-5d53-4b10-8609-389dcb45dac2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/commands_covid.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/servant_command.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/servant_command.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/servant_command_banner.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/servant_command_banner.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/servant_faq.gif" beforeDir="false" afterPath="$PROJECT_DIR$/images/servant_faq.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/servant_faq_banner.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/servant_faq_banner.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands_economy.html" beforeDir="false" afterPath="$PROJECT_DIR$/commands_economy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands_fun.html" beforeDir="false" afterPath="$PROJECT_DIR$/commands_fun.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands_information.html" beforeDir="false" afterPath="$PROJECT_DIR$/commands_information.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands_memes.html" beforeDir="false" afterPath="$PROJECT_DIR$/commands_memes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands_moderation.html" beforeDir="false" afterPath="$PROJECT_DIR$/commands_moderation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands_music.html" beforeDir="false" afterPath="$PROJECT_DIR$/commands_music.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands_random.html" beforeDir="false" afterPath="$PROJECT_DIR$/commands_random.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands_utilities.html" beforeDir="false" afterPath="$PROJECT_DIR$/commands_utilities.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +59,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Jawad\Desktop\Projects\Howl-Bot" />
       <recent name="C:\Users\Jawad\Desktop\howlbot-webpate" />
     </key>
   </component>
@@ -54,6 +78,17 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="645" y="253" width="628" height="592" key="find.popup" timestamp="1590452356476">
