@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 
-<!-- Mirrored from servant.tanc.red/commands_information by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 24 May 2020 08:15:32 GMT -->
+<!-- Mirrored from servant.tanc.red/commands_Utilities by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 24 May 2020 08:15:32 GMT -->
 <head>
-<title>Howl Bot‏‏‎ ‎ ❤️‏‏‎ ‎‏‏‎Information</title>
+<title>Howl Bot‏‏‎ ‎ ❤️‏‏‎ NSFW</title>
 <meta charset="utf-8">
 
 <!-- Primary Meta Tags -->
@@ -13,14 +13,14 @@
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="commands_information.html">
+<meta property="og:url" content="commands_Utilities.html">
 <meta property="og:title" content="Servant — Commands">
 <meta property="og:description" content="Plenty of commands: Moderation, Information, Utilities, Fun and Economy!">
 <meta property="og:image" content="../i.imgur.com/FR7VeaT.png">
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="commands_information.html">
+<meta property="twitter:url" content="commands_Utilities.html">
 <meta property="twitter:title" content="Servant — Commands">
 <meta property="twitter:description" content="Plenty of commands: Moderation, Information, Utilities, Fun and Economy!">
 <meta property="twitter:image" content="../i.imgur.com/FR7VeaT.png">
@@ -88,7 +88,6 @@
     <div class="main-content">
       <ul class="collapsible">
         <li>
-          <div class="collapsible-header"><i class="fas fa-info-circle"></i> about - this is the "about the bot" command.</div>
           <div class="collapsible-body">
             <table class="table">
               <tr>
@@ -97,10 +96,154 @@
               </tr>
               <tr>
                 <td class="td-l"><p>
-                  All information about Servant.
+                  Start a giveaway that draws a given amount of people as winners after a given time.<br/>
+                  List all running giveaways of the current server.
                 </p></td>
                 <td class="td-r"><p>
-                  about
+                  None
+                </p></td>
+              </tr>
+            </table>
+            <h3><i class="fas fa-check-circle"></i> Permissions</h3>
+            <table class="table">
+              <tr>
+                <td class="td-l"><span class="titleme">User</span></td>
+                <td class="td-r"><span class="titleme">Servant</span></td>
+              </tr>
+              <tr>
+                <td class="td-l">None</td>
+                <td class="td-r">
+                  <span class="highlightme">Read Text Channels & See Voice Channels</span>, <span class="highlightme">Send Messages</span>, <span class="highlightme">Read Message History</span>, 
+                  <span class="highlightme">Embed Links</span>, <span class="highlightme">Add Reactions</span>
+                </td>
+              </tr>
+            </table>
+            <p></p> <!-- For margin-bottom at .collapsible p -->
+            <h3><i class="fas fa-exclamation-circle"></i> Usage</h3>
+            <p>
+              <span class="titleme">Start giveaway</span><br/>
+              Command: <span class="highlightme">!giveaway "[prize name]" [amount of winners] [time]</span><br/>
+              Example: <span class="highlightme">!giveaway "100 Cookies" 1 12h</span>
+            </p>
+            <p>
+              <span class="titleme">List giveaways</span><br/>
+              Command: <span class="highlightme">!giveaway list</span>
+            </p>
+            <h3><i class="fas fa-comment-dots"></i> Hint</h3>
+            <p>
+              "Time formats: d = days, h = hours, m = minutes
+              <ul>
+                <li>Also, you can use as many time-arguments as you want</li>
+                <li>Example: <span class="highlightme">giveaway "100 cookies" 1 2d 12h 36m 1d</span></li>
+                <li>Time result: <span class="highlightme">2d</span> + <span class="highlightme">12h</span> + <span class="highlightme">36m</span> + <span class="highlightme">1d</span> = 3 days, 12 hours, 36 minutes</li>
+              </ul>
+              Seconds are not supported.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-body">
+            <table class="table">
+              <tr>
+                <td class="td-l"><h3><i class="fas fa-info-circle"></i> Description</h3></td>
+                <td class="td-r"><h3><i class="fas fa-signature"></i> Alias</h3></td>
+              </tr>
+              <tr>
+                <td class="td-l"><p>
+                  Create a poll with up to 10 custom answers.
+                </p></td>
+                <td class="td-r"><p>
+                  vote
+                </p></td>
+              </tr>
+            </table>
+            <h3><i class="fas fa-check-circle"></i> Permissions</h3>
+            <table class="table">
+              <tr>
+                <td class="td-l"><span class="titleme">User</span></td>
+                <td class="td-r"><span class="titleme">Servant</span></td>
+              </tr>
+              <tr>
+                <td class="td-l">None</td>
+                <td class="td-r">
+                  <span class="highlightme">Read Text Channels & See Voice Channels</span>, <span class="highlightme">Send Messages</span>, <span class="highlightme">Read Message History</span>, 
+                  <span class="highlightme">Embed Links</span>, <span class="highlightme">Add Reactions</span>
+                </td>
+              </tr>
+            </table>
+            <p></p> <!-- For margin-bottom at .collapsible p -->
+            <h3><i class="fas fa-exclamation-circle"></i> Usage</h3>
+            <p>
+              Command: <span class="highlightme">!poll [question]/[answer1]/(...)/[answer10]</span><br/>
+              Example: <span class="highlightme"> When do you have time?/Mon/Tue/Wed/Thu/Fri/Sat/Sun</span>
+            </p>
+            <h3><i class="fas fa-comment-dots"></i> Hint</h3>
+            <p>
+              After executing this command, you will be asked if you want to allow multiple answers.<br/>
+              Polls time out after one week.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-body">
+            <table class="table">
+              <tr>
+                <td class="td-l"><h3><i class="fas fa-info-circle"></i> Description</h3></td>
+                <td class="td-r"><h3><i class="fas fa-signature"></i> Alias</h3></td>
+              </tr>
+              <tr>
+                <td class="td-l"><p>
+                  Smol poll with yes/no.
+                </p></td>
+                <td class="td-r"><p>
+                  quickvote
+                </p></td>
+              </tr>
+            </table>
+            <h3><i class="fas fa-check-circle"></i> Permissions</h3>
+            <table class="table">
+              <tr>
+                <td class="td-l"><span class="titleme">User</span></td>
+                <td class="td-r"><span class="titleme">Servant</span></td>
+              </tr>
+              <tr>
+                <td class="td-l">None</td>
+                <td class="td-r">
+                  <span class="highlightme">Read Text Channels & See Voice Channels</span>, <span class="highlightme">Send Messages</span>, <span class="highlightme">Read Message History</span>, 
+                  <span class="highlightme">Embed Links</span>, <span class="highlightme">Add Reactions</span>
+                </td>
+              </tr>
+            </table>
+            <p></p> <!-- For margin-bottom at .collapsible p -->
+            <h3><i class="fas fa-exclamation-circle"></i> Usage</h3>
+            <p>
+              <span class="titleme">Start quick poll</span><br/>
+              Command: <span class="highlightme">!quickpoll [your question]</span><br/>
+              Example: <span class="highlightme">!quickpoll Create a meme channel?</span>
+            </p>
+            <h3><i class="fas fa-comment-dots"></i> Hint</h3>
+            <p>
+              You can use this command without question to make an empty poll.<br/>
+              Quickpolls time out after one week.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-body">
+            <table class="table">
+              <tr>
+                <td class="td-l"><h3><i class="fas fa-info-circle"></i> Description</h3></td>
+                <td class="td-r"><h3><i class="fas fa-signature"></i> Alias</h3></td>
+              </tr>
+              <tr>
+                <td class="td-l"><p>
+                  Set up an RemindMe to a specific time.<br/>
+                  Other members can upvote the RemindMe to also get reminded.<br/>
+                  The RemindMe will have a jump URL to the context.
+                </p></td>
+                <td class="td-r"><p>
+                  reminder<br/>
+                  alarm
                 </p></td>
               </tr>
             </table>
@@ -121,12 +264,38 @@
             <p></p> <!-- For margin-bottom at .collapsible p -->
             <h3><i class="fas fa-exclamation-circle"></i> Usage</h3>
             <p>
-              Command: <span class="highlightme">!botinfo</span>
+              Command: <span class="highlightme">!remindme "Optional Topic" [time]</span><br/>
+              <br/>
+              <strong>Example 1 → Using Time Arguments</strong><br/>
+              With topic: <span class="highlightme">!remindme "Pat Servant" 3d 2h 1m</span><br/>
+              Without topic: <span class="highlightme">!remindme 3d 2h 1m</span><br/>
+              <br/>
+              <strong>Example 2 → Using a Date and Time</strong><br/>
+              With topic: <span class="highlightme">!remindme "Pat Servant" 2020-31-12 23:59</span><br/>
+              Without topic: <span class="highlightme">!remindme 2020-31-12 23:59</span>
+            </p>
+            <h3><i class="fas fa-comment-dots"></i> Hint</h3>
+            <p>
+              - The command author will always be reminded, even without upvoting.<br/>
+              - A RemindMe must not be further in the future than 1 month.<br/>
+              <br/>
+              <strong>Time Arguments</strong><br/>
+              - Time formats: d = days, h = hours, m = minutes<br/>
+              ⤷ Also, you can use as many time arguments as you want<br/>
+              ⤷ Example: <span class="highlightme">!remindme "Pat Servant" 2d 12h 36m 1d</span><br/>
+              ⤷ Time result: <span class="highlightme">2d</span> + <span class="highlightme">12h</span> + <span class="highlightme">36m</span> + <span class="highlightme">1d</span> = 3 days, 12 hours, 36 minutes<br/>
+              - Seconds are not supported.<br/>
+              <br/>
+              <strong>Date and Time</strong><br/>
+              - You cannot set reminders in the past.<br/>
+              - You have to use the 24-hour system.<br/>
+              - It takes your timezone into account.<br/>
+              ⤷ If you didn't set one up, it will use UTC.<br/>
+              ⤷ To set one up, use the <span class="highlightme">!user</span> command.
             </p>
           </div>
         </li>
         <li>
-          <div class="collapsible-header"><i class="fas fa-info-circle"></i> invite - invite the bot to your server.</div>
           <div class="collapsible-body">
             <table class="table">
               <tr>
@@ -135,13 +304,87 @@
               </tr>
               <tr>
                 <td class="td-l"><p>
-                  Support me ♥<br>
-                  Information about Patreon, PayPal and Server Boosts.
+                  Let people sign up for an event (e.g. a raid).<br/>
+                  The signup will be completed if either of the following happens:<br/>
+                  1. The given amount of people have signed up (reacted).<br/>
+                  2. The given expiring date (or the default one if not given) was reached (see last hint).<br/>
+                  3. The signup creator clicked the :x: reaction.
                 </p></td>
                 <td class="td-r"><p>
-                  donation<br/>
-                  serverboost<br/>
-                  boost
+                  event
+                </p></td>
+              </tr>
+            </table>
+            <h3><i class="fas fa-check-circle"></i> Permissions</h3>
+            <table class="table">
+              <tr>
+                <td class="td-l"><span class="titleme">User</span></td>
+                <td class="td-r"><span class="titleme">Servant</span></td>
+              </tr>
+              <tr>
+                <td class="td-l">None</td>
+                <td class="td-r">
+                  <span class="highlightme">Read Text Channels & See Voice Channels</span>, <span class="highlightme">Send Messages</span>, <span class="highlightme">Read Message History</span>, 
+                  <span class="highlightme">Embed Links</span>, <span class="highlightme">Add Reactions</span>
+                </td>
+              </tr>
+            </table>
+            <p></p> <!-- For margin-bottom at .collapsible p -->
+            <h3><i class="fas fa-exclamation-circle"></i> Usage</h3>
+            <p>
+              Command: <span class="highlightme">!signup "Title" [amount of participants] [event date and time]</span><br/>
+              Example 1: <span class="highlightme">!signup "Holy Grail War" 10 2019-12-31 23:30</span><br/>
+              Example 2: <span class="highlightme">!signup 10 2019-12-31 23:30</span><br/>
+              Example 3: <span class="highlightme">!signup "Holy Grail War" 10</span><br/>
+              Example 4: <span class="highlightme">!signup 10</span>
+            </p>
+            <h3><i class="fas fa-comment-dots"></i> Hint</h3>
+            <p>
+              <ul>
+                <li>The amount of participants has to be within 1 and 100.</li>
+                <li>The event date and time has to be within the next 4 weeks.</li>
+                <li>If you don't set the event date and time, the signup will expire in 4 weeks.</li>
+                <li>The event date and time will use the server's offset. You can check it by typing <span class="highlightme">!serverinfo</span> -> Servant Settings -> Offset</li>
+                <li>If you set an event date, the signup will expire 30 minutes earlier, so you have time to organize the group.</li>
+              </ul>
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="far fa-lightbulb"></i> nekoyuri - NSFW of yuri image/gifs</div>
+          <div class="collapsible-header"><i class="far fa-lightbulb"></i> nekofeet - NSFW of an  image/gif of ero feet</div>
+          <div class="collapsible-header"><i class="far fa-lightbulb"></i> nekotrap - NSFW trap image/gif</div>
+          <div class="collapsible-header"><i class="far fa-lightbulb"></i> futanari - NSFW  image/gif of futanari</div>
+          <div class="collapsible-header"><i class="far fa-lightbulb"></i> hololewd - NSFW of a Holo image/gif</div>
+          <div class="collapsible-header"><i class="far fa-lightbulb"></i> nekosologif - NSFW gif of a solo</div>
+          <div class="collapsible-header"><i class="far fa-lightbulb"></i> nekosolo - NSFW image of a solo</div>
+          <div class="collapsible-header"><i class="far fa-lightbulb"></i> nekofeetgif - NSFW gif of ero feet</div>
+          <div class="collapsible-header"><i class="far fa-lightbulb"></i> cum - NSFW gif of cum. </div>
+          <div class="collapsible-header"><i class="far fa-lightbulb"></i> wallpaper - NSFW hentai wallpapers</div>
+          <div class="collapsible-header"><i class="far fa-lightbulb"></i> cumjpg - NSFW image of a cum.</div>
+          <div class="collapsible-header"><i class="far fa-lightbulb"></i> nekobj - NSFW gif of hentai bj.</div>
+          <div class="collapsible-header"><i class="far fa-lightbulb"></i> blowjobjpg - NSFW image of hentai bj.</div>
+          <div class="collapsible-header"><i class="far fa-lightbulb"></i> nekospank - image/gif of NSFW spank.</div>
+          <div class="collapsible-header"><i class="far fa-lightbulb"></i> nekoboobs - image/gif of NSFW boobs. </div>
+          <div class="collapsible-header"><i class="far fa-lightbulb"></i> hentaigif - NSFW hentai gif.</div>
+          <div class="collapsible-header"><i class="far fa-lightbulb"></i> nekowaifu - waifu image.</div>
+          <div class="collapsible-header"><i class="far fa-lightbulb"></i> nekofemdom - image/gif of NSFW femdom.</div>
+          <div class="collapsible-header"><i class="far fa-lightbulb"></i> nekokiss - image/gif of NSFW kiss. </div>
+          <div class="collapsible-header"><i class="far fa-lightbulb"></i> nekoavi - anime avatar's. </div>
+          <div class="collapsible-header"><i class="far fa-lightbulb"></i> hentai - NSFW image of hentai.</div>
+          <div class="collapsible-header"><i class="far fa-lightbulb"></i> nekopussy - image/gif of NSFW pussy.</div>
+          <div class="collapsible-body">
+            <table class="table">
+              <tr>
+                <td class="td-l"><h3><i class="fas fa-info-circle"></i> Description</h3></td>
+                <td class="td-r"><h3><i class="fas fa-signature"></i> Alias</h3></td>
+              </tr>
+              <tr>
+                <td class="td-l"><p>
+                  Convert a date and time from one timezone to another.
+                </p></td>
+                <td class="td-r"><p>
+                  None
                 </p></td>
               </tr>
             </table>
@@ -162,207 +405,16 @@
             <p></p> <!-- For margin-bottom at .collapsible p -->
             <h3><i class="fas fa-exclamation-circle"></i> Usage</h3>
             <p>
-              Command: <span class="highlightme">!patreon</span><br/>
+              Command: <span class="highlightme">!timezone yyyy-MM-dd HH:mm [current timezone] [target timezone]</span>
+              Example: <span class="highlightme">!timezone 2019-01-01 22:00 PST CET</span>
             </p>
-          </div>
-        </li>
-        <li>
-          <div class="collapsible-header"><i class="fas fa-info-circle"></i> ping - gets the bot's response time and latency.</div>
-          <div class="collapsible-body">
-            <table class="table">
-              <tr>
-                <td class="td-l"><h3><i class="fas fa-info-circle"></i> Description</h3></td>
-                <td class="td-r"><h3><i class="fas fa-signature"></i> Alias</h3></td>
-              </tr>
-              <tr>
-                <td class="td-l"><p>
-                  Displays the current ping of the bot and API latency.
-                </p></td>
-                <td class="td-r"><p>
-                  pong
-                </p></td>
-              </tr>
-            </table>
-            <h3><i class="fas fa-check-circle"></i> Permissions</h3>
-            <table class="table">
-              <tr>
-                <td class="td-l"><span class="titleme">User</span></td>
-                <td class="td-r"><span class="titleme">Servant</span></td>
-              </tr>
-              <tr>
-                <td class="td-l">None</td>
-                <td class="td-r">
-                  <span class="highlightme">Read Text Channels & See Voice Channels</span>, <span class="highlightme">Send Messages</span>, <span class="highlightme">Read Message History</span>
-                </td>
-              </tr>
-            </table>
-            <p></p> <!-- For margin-bottom at .collapsible p -->
-            <h3><i class="fas fa-exclamation-circle"></i> Usage</h3>
+            <h3><i class="fas fa-comment-dots"></i> Hint</h3>
             <p>
-              Command: <span class="highlightme">!ping</span>
-            </p>
-          </div>
-        </li>
-        <div class="collapsible-header"><i class="fas fa-info-circle"></i> server - displays information about the current server.</div>
-        <div class="collapsible-header"><i class="fas fa-info-circle"></i> avatar - get your own or another user's avatar.</div>
-        <div class="collapsible-header"><i class="fas fa-info-circle"></i> listroles - gets a list of roles in the server.</div>
-        <div class="collapsible-header"><i class="fas fa-info-circle"></i> roleinfo - gets basic information on a role.</div>
-        <div class="collapsible-header"><i class="fas fa-info-circle"></i> mods - check which mods are online in current server.</div>
-        <div class="collapsible-header"><i class="fas fa-info-circle"></i> joindat - check when a user joined the current server.</div>
-        <div class="collapsible-header"><i class="fas fa-info-circle"></i> spotify - get information about someone's Spotify status, if they have one</div>
-        <div class="collapsible-header"><i class="fas fa-info-circle"></i> melon [timeframe] - grabs top kpop songs depending on timeframe [realtime, day, month, rising]</div>
-          <div class="collapsible-body">
-            <table class="table">
-              <tr>
-                <td class="td-l"><h3><i class="fas fa-info-circle"></i> Description</h3></td>
-                <td class="td-r"><h3><i class="fas fa-signature"></i> Alias</h3></td>
-              </tr>
-              <tr>
-                <td class="td-l"><p>
-                  Displays the current ping of the bot and API latency.
-                </p></td>
-                <td class="td-r"><p>
-                  pong
-                </p></td>
-              </tr>
-            </table>
-            <h3><i class="fas fa-check-circle"></i> Permissions</h3>
-            <table class="table">
-              <tr>
-                <td class="td-l"><span class="titleme">User</span></td>
-                <td class="td-r"><span class="titleme">Servant</span></td>
-              </tr>
-              <tr>
-                <td class="td-l">None</td>
-                <td class="td-r">
-                  <span class="highlightme">Read Text Channels & See Voice Channels</span>, <span class="highlightme">Send Messages</span>, <span class="highlightme">Read Message History</span>
-                </td>
-              </tr>
-            </table>
-            <p></p> <!-- For margin-bottom at .collapsible p -->
-            <h3><i class="fas fa-exclamation-circle"></i> Usage</h3>
-            <p>
-              Command: <span class="highlightme">!ping</span>
-            </p>
-          </div>
-        </li>
-        <div class="collapsible-header"><i class="fas fa-info-circle"></i> uptime - check how long the bot has been up.</div>
-          <div class="collapsible-body">
-            <table class="table">
-              <tr>
-                <td class="td-l"><h3><i class="fas fa-info-circle"></i> Description</h3></td>
-                <td class="td-r"><h3><i class="fas fa-signature"></i> Alias</h3></td>
-              </tr>
-              <tr>
-                <td class="td-l"><p>
-                  Displays the current ping of the bot and API latency.
-                </p></td>
-                <td class="td-r"><p>
-                  pong
-                </p></td>
-              </tr>
-            </table>
-            <h3><i class="fas fa-check-circle"></i> Permissions</h3>
-            <table class="table">
-              <tr>
-                <td class="td-l"><span class="titleme">User</span></td>
-                <td class="td-r"><span class="titleme">Servant</span></td>
-              </tr>
-              <tr>
-                <td class="td-l">None</td>
-                <td class="td-r">
-                  <span class="highlightme">Read Text Channels & See Voice Channels</span>, <span class="highlightme">Send Messages</span>, <span class="highlightme">Read Message History</span>
-                </td>
-              </tr>
-            </table>
-            <p></p> <!-- For margin-bottom at .collapsible p -->
-            <h3><i class="fas fa-exclamation-circle"></i> Usage</h3>
-            <p>
-              Command: <span class="highlightme">!ping</span>
-            </p>
-          </div>
-        </li>
-        <div class="collapsible-header"><i class="fas fa-info-circle"></i> whois - returns information about mentioned user.</div>
-        <div class="collapsible-header"><i class="fas fa-info-circle"></i> members - show the newest members of this server.</div>
-        <div class="collapsible-header"><i class="fas fa-info-circle"></i> </div>
-        <div class="collapsible-header"><i class="fas fa-info-circle"></i> members</div>
-        <div class="collapsible-header"><i class="fas fa-info-circle"></i> members</div>
-        <div class="collapsible-header"><i class="fas fa-info-circle"></i> members</div>
-          <div class="collapsible-body">
-            <table class="table">
-              <tr>
-                <td class="td-l"><h3><i class="fas fa-info-circle"></i> Description</h3></td>
-                <td class="td-r"><h3><i class="fas fa-signature"></i> Alias</h3></td>
-              </tr>
-              <tr>
-                <td class="td-l"><p>
-                  Displays the current ping of the bot and API latency.
-                </p></td>
-                <td class="td-r"><p>
-                  pong
-                </p></td>
-              </tr>
-            </table>
-            <h3><i class="fas fa-check-circle"></i> Permissions</h3>
-            <table class="table">
-              <tr>
-                <td class="td-l"><span class="titleme">User</span></td>
-                <td class="td-r"><span class="titleme">Servant</span></td>
-              </tr>
-              <tr>
-                <td class="td-l">None</td>
-                <td class="td-r">
-                  <span class="highlightme">Read Text Channels & See Voice Channels</span>, <span class="highlightme">Send Messages</span>, <span class="highlightme">Read Message History</span>
-                </td>
-              </tr>
-            </table>
-            <p></p> <!-- For margin-bottom at .collapsible p -->
-            <h3><i class="fas fa-exclamation-circle"></i> Usage</h3>
-            <p>
-              Command: <span class="highlightme">!ping</span>
-            </p>
-          </div>
-        </li>
-        <li>
-          <div class="collapsible-header"><i class="fas fa-info-circle"></i> support - join the support server.</div>
-          <div class="collapsible-body">
-            <table class="table">
-              <tr>
-                <td class="td-l"><h3><i class="fas fa-info-circle"></i> Description</h3></td>
-                <td class="td-r"><h3><i class="fas fa-signature"></i> Alias</h3></td>
-              </tr>
-              <tr>
-                <td class="td-l"><p>
-                  Displays both native Discord server settings and Servant's server settings.
-                </p></td>
-                <td class="td-r"><p>
-                  guildinfo
-                </p></td>
-              </tr>
-            </table>
-            <h3><i class="fas fa-check-circle"></i> Permissions</h3>
-            <table class="table">
-              <tr>
-                <td class="td-l"><span class="titleme">User</span></td>
-                <td class="td-r"><span class="titleme">Servant</span></td>
-              </tr>
-              <tr>
-                <td class="td-l">None</td>
-                <td class="td-r">
-                  <span class="highlightme">Read Text Channels & See Voice Channels</span>, <span class="highlightme">Send Messages</span>, <span class="highlightme">Read Message History</span>, 
-                  <span class="highlightme">Embed Links</span>
-                </td>
-              </tr>
-            </table>
-            <p></p> <!-- For margin-bottom at .collapsible p -->
-            <h3><i class="fas fa-exclamation-circle"></i> Usage</h3>
-            <p>
-              Command: <span class="highlightme">!serverinfo</span>
+              This command uses the 24 hour system.
             </p>
           </div>
         </li>
       </ul>
-
       <script>
         document.addEventListener('DOMContentLoaded', function() {
           var elems = document.querySelectorAll('.collapsible');
@@ -378,7 +430,7 @@
       <div class="commands-burger-icon"><i class="fas fa-bars"></i> COMMAND CATEGORIES</div>
       <ul class="commands-nav-items commands-nav mobile-hide">
         <li class="commands-list-item"><a href="commands_moderation.html" class="commands-button"><i class="fas fa-user-cog"></i> Moderation</a></li>
-        <li class="commands-list-item"><a href="commands_information.html" class="commands-button-active"><i class="fas fa-info-circle"></i> Information</a></li>
+        <li class="commands-list-item"><a href="commands_information.html" class="commands-button"><i class="fas fa-info-circle"></i> Information</a></li>
         <li class="commands-list-item"><a href="commands_Utilities.html" class="commands-button"><i class="far fa-lightbulb"></i> Utilities</a></li>
         <li class="commands-list-item"><a href="commands_fun.html" class="commands-button"><i class="fas fa-volleyball-ball"></i> Fun</a></li>
         <li class="commands-list-item"><a href="commands_image.html" class="commands-button"><i class="fas fa-volleyball-ball"></i> Image</a></li>
@@ -387,7 +439,8 @@
         <li class="commands-list-item"><a href="commands_random.html" class="commands-button"><i class="fas fa-dice"></i> Random</a></li>
         <li class="commands-list-item"><a href="commands_memes.html" class="commands-button"><i class="fas fa-memes"></i> Memes</a></li>
         <li class="commands-list-item"><a href="commands_music.html" class="commands-button"><i class="fas fa-memes"></i> Music</a></li>
-        <li class="commands-list-item"><a href="commands_nsfw.html" class="commands-button"><i class="fas fa-memes"></i> NSFW</a></li>
+        <li class="commands-list-item"><a href="commands_nsfw.html" class="commands-button-active"><i class="fas fa-memes"></i> NSFW</a></li>
+
 
       </ul>
     </div>
